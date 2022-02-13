@@ -1,0 +1,36 @@
+.screen_home {
+  @apply flex   justify-around  w-3/5 mx-auto py-4;
+}
+.Food__border {
+  @apply flex flex-col  w-full mx-auto;
+}
+.Food__border_dark {
+  @apply flex flex-col  w-full mx-auto;
+}
+
+.Card__Border {
+  @apply h-fit bg-rose-100 text-center pb-5  my-14;
+}
+.Card__Border_dark {
+  @apply h-fit bg-rose-100  text-center pb-5 m-14;
+}
+
+.card__order {
+  @apply m-6 border rounded grid grid-cols-2 text-center;
+}
+.card__order_dark {
+  @apply m-6 border rounded grid grid-cols-2 text-center border-slate-900;
+}
+
+.total_dark {
+  @apply m-6 border-b-4  rounded grid;
+}
+.total {
+  @apply m-6 border-b-4 rounded grid border-black;
+}
+.order__button_dark {
+  @apply border rounded-full w-fit px-56 m-auto my-2;
+}
+.order__button {
+  @apply border rounded-full w-fit px-56 m-auto my-2 border-black;
+}
