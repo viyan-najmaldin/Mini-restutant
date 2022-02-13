@@ -37,7 +37,7 @@ function Card(Props) {
         </div>
         <button
           onClick={() => onOrder()}
-          className=" hover:text-white  rounded bg-red-500 relative mt-4 p-4 px-14 right-6"
+          className=" hover:text-white  rounded bg-red-500 relative mt-4 p-4 px-14 "
         >
           Add to list
         </button>

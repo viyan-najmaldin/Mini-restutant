@@ -34,6 +34,7 @@ function Order() {
                 img={food?.img}
                 name={food.name}
                 desc={food.desc}
+                price={food.price}
                 count={1}
                 delete={() => onDelete(food.id)}
               />
@@ -44,7 +45,7 @@ function Order() {
           <div className="text-center">
             <div className={`${isDark ? "total_dark" : "total"}`}>
               <h1 className="m-4 text-3xl text-rose-500">
-                Total ( {isOrderd?.length} item) : {total}$
+                Total ( {isOrderd?.length} item)
               </h1>
             </div>
             <h1 className="m-4 text-3xl text-rose-500">{total}$</h1>

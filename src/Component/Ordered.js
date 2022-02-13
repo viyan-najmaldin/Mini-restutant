@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 function CardOrder(Props) {
   let isDark = useSelector((state) => state.Theme.isDark);
-
   return (
     <div
       className={`${isDark ? "card__order" : "card__order_dark"} bg-rose-300`}
@@ -16,12 +15,12 @@ function CardOrder(Props) {
         <div className=" m-5">{Props?.desc}</div>
         <div className={` relative  text-xl  `}>
           Price :<i className="uil uil-dollar-sign-alt "></i>
-          {Props.price}
+          {Props?.price}
         </div>
 
         <button
           onClick={Props.delete}
-          className=" hover:text-white  m-2 rounded bg-red-500 relative mt-4 p-4 px-14 right-6"
+          className=" hover:text-white  m-4 ml-10 rounded bg-red-500 relative mt-2 p-2 px-6 "
         >
           Remove
         </button>
